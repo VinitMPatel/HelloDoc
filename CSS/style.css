@@ -1,0 +1,41 @@
+.maindiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode{
+    position: absolute;
+    right : 10px;
+    top : 10px;
+}
+.fields{
+    width: 50%;
+    /* padding: 10px; */
+    margin: auto;
+}
+input{
+    margin: auto;
+}
+.backbtn{
+    width: 50%;
+    padding-left: 100px;
+}
+body{
+    /* background-image: url("../images/1HalloDoc.png"); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.icon{
+    position: relative;
+    bottom: 40px;
+    left : 40%;
+}
+@media only screen and (max-width: 710px) {
+.fields{
+    width : 60%;
+}
+.mainpic{
+    width : 50%;
+}
+}
