@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .mode{
     position: absolute;
@@ -11,31 +11,87 @@
 }
 .fields{
     width: 50%;
-    /* padding: 10px; */
-    margin: auto;
-}
-input{
     margin: auto;
 }
 .backbtn{
     width: 50%;
-    padding-left: 100px;
-}
-body{
-    /* background-image: url("../images/1HalloDoc.png"); */
-    background-repeat: no-repeat;
-    background-size: cover; 
+    padding-left: 20%;
 }
 .icon{
     position: relative;
     bottom: 40px;
     left : 40%;
 }
+.terms{
+    width : 30%;
+    font-size: 0.7rem;
+}
+.bg-image{
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    opacity: 0.3;
+    filter:blur(3px);
+    display: flex;
+    justify-content: center;
+}
+.mainpic{
+    width : 33%;
+}
+.pbtn{
+    border: 1px solid rgb(194, 203, 255);
+    background-color: rgba(170, 178, 207, 0.281);
+    text-transform: none;
+}
+.ffbtn{
+    border: 1px solid rgb(177, 236, 245);
+    background-color: rgba(167, 216, 235, 0.418);
+    text-transform: none;
+}
+.cbtn{
+    border: 2px solid rgb(222, 250, 199);
+    background-color: rgba(164, 204, 163, 0.507);
+    text-transform: none;
+}
+.bbtn{
+    border: 2px solid rgb(234, 210, 240);
+    background-color: rgba(208, 191, 214, 0.363);
+    text-transform: none;
+}
+.link a{
+    width : 250px;
+    height : 50px;
+    padding: 10px;
+}
+.backbutton{
+    position: absolute;
+    right: 20%;
+    top: 9%;
+}
+.temp{
+    color: rgb(175, 23, 150);
+}
 @media only screen and (max-width: 710px) {
 .fields{
     width : 60%;
 }
 .mainpic{
-    width : 50%;
+    width : 35%;
 }
+.bg{
+    width: 60%;
+}
+}
+@media only screen and (max-width: 630px) {
+.backbtn{
+    padding-left: 10%;
+}
+.mainpic{
+    width : 45%;
+}
+}
+@media only screen and (max-width: 370px) {
+    .backbutton{
+        right: 15%;
+    }
 }
