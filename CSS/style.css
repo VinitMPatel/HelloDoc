@@ -23,8 +23,8 @@
     left : 40%;
 }
 .terms{
-    width : 30%;
-    font-size: 0.7rem;
+    /* width : 30%; */
+    font-size: 0.9rem;
 }
 .bg-image{
     z-index: -1;
@@ -65,11 +65,22 @@
 }
 .backbutton{
     position: absolute;
-    right: 20%;
-    top: 9%;
+    right: 7%;
+    top: 10%;
 }
 .temp{
     color: rgb(175, 23, 150);
+}
+.p_r{
+    position: absolute;
+    top : 13%;
+    right : 6%;
+}
+.pr_labels{
+    left: 10%;
+}
+.pr_main{
+    margin-top: 70px;
 }
 @media only screen and (max-width: 710px) {
 .fields{
@@ -82,13 +93,21 @@
     width: 60%;
 }
 }
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 650px) {
 .backbtn{
     padding-left: 10%;
 }
 .mainpic{
     width : 45%;
 }
+.terms{
+    width: 40%;
+}
+}
+@media only screen and (max-width: 390px) {
+    .terms{
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 370px) {
     .backbutton{
