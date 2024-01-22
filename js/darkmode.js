@@ -1,11 +1,17 @@
 const btn = document.getElementById("darkbtn");
 const img = document.getElementById("darkimg");
-var flag = 0;
+const content = document.getElementById("main-content");
+var flag ;
 btn.addEventListener('click', dark)
 
 function dark(){
     if(flag==0){
         document.querySelector('body').setAttribute('data-bs-theme' , 'dark');
+        try{
+            content.classList.remove("bg-white");
+            content.classList.add("bg-dark");
+        }
+        catch(err){}
         img.src = "images/dark_moon.png";
         document.cookie = "flag = " + flag;
         flag=1;
@@ -13,6 +19,11 @@ function dark(){
     else{
         document.querySelector('body').setAttribute('data-bs-theme' , 'light');
         img.src = "images/moon_light.png";
+        try{
+            content.classList.remove("bg-dark");
+            content.classList.add("bg-white");
+        }
+        catch(err){}
         document.cookie = "flag = " + flag;
         flag=0;
     }

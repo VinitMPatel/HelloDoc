@@ -1,116 +1,180 @@
-.maindiv{
+.maindiv {
     height: 100vh;
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
-.mode{
+
+.mode {
     position: absolute;
-    right : 10px;
-    top : 10px;
+    right: 10px;
+    top: 10px;
 }
-.fields{
+
+.fields {
     width: 50%;
     margin: auto;
 }
-.backbtn{
+
+.backbtn {
     width: 50%;
     padding-left: 20%;
 }
-.icon{
+
+.icon {
     position: relative;
     bottom: 40px;
-    left : 40%;
+    left: 40%;
 }
-.terms{
+
+.terms {
     /* width : 30%; */
     font-size: 0.9rem;
 }
-.bg-image{
+
+.bg-image {
     z-index: -1;
     position: absolute;
     height: 100vh;
     opacity: 0.3;
-    filter:blur(3px);
+    filter: blur(3px);
     display: flex;
     justify-content: center;
 }
-.mainpic{
-    width : 33%;
+
+.mainpic {
+    width: 33%;
 }
-.pbtn{
+
+.pbtn {
     border: 1px solid rgb(194, 203, 255);
     background-color: rgba(170, 178, 207, 0.281);
     text-transform: none;
 }
-.ffbtn{
+
+.ffbtn {
     border: 1px solid rgb(177, 236, 245);
     background-color: rgba(167, 216, 235, 0.418);
     text-transform: none;
 }
-.cbtn{
+
+.cbtn {
     border: 2px solid rgb(222, 250, 199);
     background-color: rgba(164, 204, 163, 0.507);
     text-transform: none;
 }
-.bbtn{
+
+.bbtn {
     border: 2px solid rgb(234, 210, 240);
     background-color: rgba(208, 191, 214, 0.363);
     text-transform: none;
 }
-.link a{
-    width : 250px;
-    height : 50px;
+
+.link a {
+    width: 250px;
+    height: 50px;
     padding: 10px;
 }
-.backbutton{
+
+.backbutton {
     position: absolute;
     right: 7%;
     top: 10%;
 }
-.temp{
+
+.temp {
     color: rgb(175, 23, 150);
 }
-.p_r{
+
+.p_r {
     position: absolute;
-    top : 13%;
-    right : 6%;
+    top: 13%;
+    right: 10%;
 }
-.pr_labels{
+
+.form-floating:hover~label {
+    color: #00b8e6;
+}
+
+
+.form-floating .form-control:focus~label
+{
+    color: #00b8e6;
+}
+
+
+.form-control:focus{
+    border: 1px solid #00b8e6;
+}
+/* 
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    color: red;
+} */
+/* .form-select~label, .form-control:focus{
+    color: red;
+} */
+
+/* 
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    color : rgb(0, 247, 255);
+} */
+.form-control:focus {
+    /* border-color: red; */
+    box-shadow: none;
+}
+
+.pr_labels {
     left: 10%;
 }
-.pr_main{
+
+.pr_main {
     margin-top: 70px;
 }
+
+/* 
+.form-floating>.form-control:focus~label {
+    color: red;
+} */
+
 @media only screen and (max-width: 710px) {
-.fields{
-    width : 60%;
+    .fields {
+        width: 60%;
+    }
+
+    .mainpic {
+        width: 35%;
+    }
+
+    .bg {
+        width: 60%;
+    }
 }
-.mainpic{
-    width : 35%;
-}
-.bg{
-    width: 60%;
-}
-}
+
 @media only screen and (max-width: 650px) {
-.backbtn{
-    padding-left: 10%;
+    .backbtn {
+        padding-left: 10%;
+    }
+
+    .mainpic {
+        width: 45%;
+    }
+
+    .terms {
+        width: 40%;
+    }
 }
-.mainpic{
-    width : 45%;
-}
-.terms{
-    width: 40%;
-}
-}
+
 @media only screen and (max-width: 390px) {
-    .terms{
+    .terms {
         width: 50%;
     }
 }
+
 @media only screen and (max-width: 370px) {
-    .backbutton{
+    .backbutton {
         right: 15%;
     }
 }
