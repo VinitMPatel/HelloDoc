@@ -1,5 +1,5 @@
 .maindiv {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -89,7 +89,7 @@
 .p_r {
     position: absolute;
     top: 13%;
-    right: 10%;
+    right: 16%;
 }
 
 .form-floating:hover~label {
@@ -106,23 +106,8 @@
 .form-control:focus{
     border: 1px solid #00b8e6;
 }
-/* 
-.form-floating>.form-control-plaintext~label,
-.form-floating>.form-control:focus~label,
-.form-floating>.form-control:not(:placeholder-shown)~label,
-.form-floating>.form-select~label {
-    color: red;
-} */
-/* .form-select~label, .form-control:focus{
-    color: red;
-} */
 
-/* 
-.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
-    color : rgb(0, 247, 255);
-} */
 .form-control:focus {
-    /* border-color: red; */
     box-shadow: none;
 }
 
@@ -131,14 +116,24 @@
 }
 
 .pr_main {
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 
-/* 
-.form-floating>.form-control:focus~label {
-    color: red;
-} */
+div.iti.iti--allow-dropdown{
+    width: 100%;
+    border-radius: 5px;
+}
 
+
+div.iti.iti--allow-dropdown:focus{
+    outline: #00b8e6;
+}
+
+input#phone{
+    height: 58px;
+    width: 100%;
+    /* border-color: #00b8e6; */
+}
 @media only screen and (max-width: 710px) {
     .fields {
         width: 60%;
@@ -162,19 +157,36 @@
         width: 45%;
     }
 
-    .terms {
+    /* .terms {
         width: 40%;
+    } */
+
+    .p_r{
+        right: 5%;
     }
 }
 
 @media only screen and (max-width: 390px) {
-    .terms {
+    /* .terms {
         width: 50%;
-    }
+    } */
 }
 
 @media only screen and (max-width: 370px) {
     .backbutton {
         right: 15%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .form-floating{
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .none{
+        display: none;
     }
 }
